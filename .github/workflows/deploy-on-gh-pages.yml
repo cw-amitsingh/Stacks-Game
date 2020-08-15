@@ -1,26 +1,36 @@
 name: Deploy to Github Pages
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  deploy-on-gh-pages:
+  deploy:
     name: Deploying to Github Pages
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
+
       - name: Authorizing Github action
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
         uses: oleksiyrudenko/gha-git-credentials@v1
+
       - name: Clean install dependencies
         run: npm ci
+
       - name: Building with production config
         run: npm run build
+
       - name: Git Add
         run: git --work-tree build add --all
+
       - name: Commiting the files
         run: git --work-tree build commit -m 'deploy files'
+
       - name: Deploying
         run: git push origin HEAD:gh-pages --force
