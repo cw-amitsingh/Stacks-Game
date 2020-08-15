@@ -4,12 +4,13 @@ on: [push]
 
 jobs:
   deploy:
-    name: Deploy my app
+    name: Deploy the branch
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout branch
+        uses: actions/checkout@v1
 
       - uses: chrnorm/deployment-action@releases/v1
         name: Create GitHub deployment
@@ -18,6 +19,9 @@ jobs:
           token: "${{ github.token }}"
           target_url: https://amitsingh-007.github.io/stacks-game/
           environment: production
+      
+      - name: Clean install dependencies
+        run: npm ci
 
       - name: Deploy my app
         run: npm run build
