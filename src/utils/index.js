@@ -8,6 +8,6 @@ export const getTitle = (gameStatus) => {
       return "You lost!!! Please Try again.";
     case GameState.Playing:
     default:
-      return "Stacks Game 1";
+      return "Stacks Game 2";
   }
 };
