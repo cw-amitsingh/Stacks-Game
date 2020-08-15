@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  deploy:
+  deploy-on-gh-pages:
     name: Deploying to Github Pages
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Authorizing Github action
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
+          token: "${{ secrets.GITHUB_TOKEN }}"
         uses: oleksiyrudenko/gha-git-credentials@v1
       - name: Clean install dependencies
         run: npm ci
