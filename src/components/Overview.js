@@ -8,7 +8,7 @@ export const Overview = ({ gameStatus }) => (
       marginBottom: "60px",
       color: "white",
       fontSize: 50,
-      fontFamily: "Open sans",
+      fontFamily: "cursive",
     }}
   >
     {getTitle(gameStatus)}
