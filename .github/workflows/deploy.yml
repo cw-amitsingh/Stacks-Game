@@ -8,12 +8,12 @@ jobs:
     name: Deploying to Github Pages
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
       - name: Authorizing Github action
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
         uses: oleksiyrudenko/gha-git-credentials@v1
-      - name: Checkout branch
-        uses: actions/checkout@v2
       - name: Clean install dependencies
         run: npm ci
       - name: Run deploy script
