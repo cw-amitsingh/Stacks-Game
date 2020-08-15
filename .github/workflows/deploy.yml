@@ -16,5 +16,11 @@ jobs:
         uses: oleksiyrudenko/gha-git-credentials@v1
       - name: Clean install dependencies
         run: npm ci
-      - name: Run deploy script
-        run: npm run deploy
+      - name: Building with production config
+        run: npm run build
+      - name: Git Add
+        run: git --work-tree build add --all
+      - name: Commiting the files
+        run: git --work-tree build commit -m 'deploy files'
+      - name: Pushing the files
+        run: git push origin HEAD:f-test-dummy --force
