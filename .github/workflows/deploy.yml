@@ -22,5 +22,5 @@ jobs:
         run: git --work-tree build add --all
       - name: Commiting the files
         run: git --work-tree build commit -m 'deploy files'
-      - name: Pushing the files
-        run: git push origin HEAD:f-test-dummy --force
+      - name: Deploying
+        run: git push origin HEAD:gh-pages --force
