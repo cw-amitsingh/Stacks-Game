@@ -84,6 +84,7 @@ const reducer = (state, action) => {
 const useGameModel = () => {
   const frameRunnerRef = React.useRef(new FrameRunner());
   const [state, dispatch] = React.useReducer(reducer, initialState);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleFrame = (frameCount, frameLength, totalDuration) => {
     const activeRow = state.rows[state.activeRow];
     const ms = totalDuration % config.MillisecondsPerIteration;
