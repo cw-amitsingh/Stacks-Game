@@ -21,5 +21,5 @@ jobs:
         uses: oleksiyrudenko/gha-git-credentials@v1
 
       - name: Doploy to GitHub Pages
-        uses: amitsingh-007/deploy-to-github-pages@v1.0.0
+        uses: amitsingh-007/deploy-to-github-pages@v1.1
 
