@@ -20,17 +20,5 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
         uses: oleksiyrudenko/gha-git-credentials@v1
 
-      - name: Clean install dependencies
-        run: npm ci
-
-      - name: Building with production config
-        run: npm run build
-
-      - name: Git Add
-        run: git --work-tree build add --all
-
-      - name: Commiting the files
-        run: git --work-tree build commit -m 'deploy files'
-
-      - name: Deploying
-        run: git push origin HEAD:gh-pages --force
+      - name: Doploy to GitHub Pages
+        uses: amitsingh-007/deploy-react-to-github-pages
