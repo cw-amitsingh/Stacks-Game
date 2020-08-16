@@ -8,6 +8,6 @@ export const getTitle = (gameStatus) => {
       return "You lost!!! Please Try again.";
     case GameState.Playing:
     default:
-      return "Welcome to Stacks";
+      return "Welcome to Stacks!";
   }
 };
