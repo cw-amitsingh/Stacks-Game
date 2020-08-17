@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stacks-game/static/css/main.9ac8cf64.chunk.css",
-    "main.js": "/stacks-game/static/js/main.acf757fe.chunk.js",
-    "main.js.map": "/stacks-game/static/js/main.acf757fe.chunk.js.map",
+    "main.js": "/stacks-game/static/js/main.52fd8165.chunk.js",
+    "main.js.map": "/stacks-game/static/js/main.52fd8165.chunk.js.map",
     "runtime-main.js": "/stacks-game/static/js/runtime-main.6e064efe.js",
     "runtime-main.js.map": "/stacks-game/static/js/runtime-main.6e064efe.js.map",
     "static/js/2.ffddfb28.chunk.js": "/stacks-game/static/js/2.ffddfb28.chunk.js",
     "static/js/2.ffddfb28.chunk.js.map": "/stacks-game/static/js/2.ffddfb28.chunk.js.map",
     "index.html": "/stacks-game/index.html",
-    "precache-manifest.c0e0ef0c0d96597ef9043acb5b88485c.js": "/stacks-game/precache-manifest.c0e0ef0c0d96597ef9043acb5b88485c.js",
+    "precache-manifest.86620d0c5d3c86b254b0f7bda1407771.js": "/stacks-game/precache-manifest.86620d0c5d3c86b254b0f7bda1407771.js",
     "service-worker.js": "/stacks-game/service-worker.js",
     "static/css/main.9ac8cf64.chunk.css.map": "/stacks-game/static/css/main.9ac8cf64.chunk.css.map",
     "static/js/2.ffddfb28.chunk.js.LICENSE.txt": "/stacks-game/static/js/2.ffddfb28.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6e064efe.js",
     "static/js/2.ffddfb28.chunk.js",
     "static/css/main.9ac8cf64.chunk.css",
-    "static/js/main.acf757fe.chunk.js"
+    "static/js/main.52fd8165.chunk.js"
   ]
 }
